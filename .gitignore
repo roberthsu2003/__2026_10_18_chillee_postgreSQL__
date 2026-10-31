@@ -1,0 +1,15 @@
+# MCP & Agent settings
+.agents/
+mcp_config.json
+*mcp*.json
+
+# Environment & Secrets
+.env
+.env.*
+*.local
+
+# System & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
