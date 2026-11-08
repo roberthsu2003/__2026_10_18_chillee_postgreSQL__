@@ -7,6 +7,11 @@ mcp_config.json
 .env
 .env.*
 *.local
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
 
 # System & Editor
 .DS_Store

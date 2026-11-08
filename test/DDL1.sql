@@ -1,0 +1,6 @@
+CREATE DATABASE SQL_TUTORIAL;
+
+SELECT datname FROM pg_database;
+
+DROP  DATABASE sql_tutorial;
+DROP DATABASE sql_tutorial WITH (FORCE);“
