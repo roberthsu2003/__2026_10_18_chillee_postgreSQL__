@@ -19,3 +19,6 @@ SELECT
     (SELECT COUNT(*) FROM customers)   AS 會員,
     (SELECT COUNT(*) FROM orders)      AS 訂單,
     (SELECT COUNT(*) FROM order_items) AS 明細;
+
+INSERT INTO stores(name, address, region, phone) 
+VALUES ('台北松山店', '台北市信義區忠孝東路五段', '北部', '02-2720-1111');
