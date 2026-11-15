@@ -18,3 +18,8 @@ FROM orders
 WHERE order_date BETWEEN '2024-03-01' AND '2024-03-31'
 AND payment_method = '信用卡'
 AND status = '已完成';
+
+SELECT  name, price
+FROM products
+ORDER BY price DESC
+LIMIT 3;
