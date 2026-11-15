@@ -10,3 +10,5 @@ CREATE TABLE "耗材庫存" (
     "存放位置"   VARCHAR(100) NOT NULL CHECK (TRIM("存放位置") <> ''),
     "最後盤點日" DATE
 );
+
+DELETE FROM "耗材庫存";
