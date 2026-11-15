@@ -13,3 +13,13 @@ CREATE TABLE public."商店" (
     "區域"   VARCHAR(50) NOT NULL,
     "電話"   VARCHAR(30)
 );
+
+ALTER TABLE stores ADD COLUMN seat_count INT DEFAULT 0;
+ALTER TABLE stores DROP COLUMN seat_count;
+
+ALTER TABLE stores RENAME COLUMN phone TO tel;
+ALTER TABLE stores RENAME COLUMN tel TO phone;
+ALTER TABLE stores ALTER COLUMN name TYPE VARCHAR(50);
+
+CREATE TABLE temp_notes(note text);
+DROP TABLE IF EXISTS temp_notes ;
