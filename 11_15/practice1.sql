@@ -23,3 +23,12 @@ ALTER TABLE stores ALTER COLUMN name TYPE VARCHAR(50);
 
 CREATE TABLE temp_notes(note text);
 DROP TABLE IF EXISTS temp_notes ;
+
+CREATE TABLE public.employees (
+    employee_id    SERIAL PRIMARY KEY,
+    name           VARCHAR(100) NOT NULL,
+    title          VARCHAR(100) NOT NULL,
+    hire_date      DATE NOT NULL,
+    monthly_salary INTEGER NOT NULL
+);
+
