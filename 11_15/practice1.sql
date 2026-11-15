@@ -32,3 +32,14 @@ CREATE TABLE public.employees (
     monthly_salary INTEGER NOT NULL
 );
 
+CREATE TABLE sample_products (
+    product_id SERIAL PRIMARY KEY,                     -- 身分證
+    name       VARCHAR(50) NOT NULL UNIQUE,            -- 必填且不可重複
+    price      NUMERIC(10, 2) NOT NULL CHECK (price >= 0), -- 售價不可為負
+    cost       NUMERIC(10, 2) CHECK (cost >= 0),       -- 成本不可為負
+    is_active  BOOLEAN NOT NULL DEFAULT true,          -- 沒填就是供應中
+    created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP   -- 沒填就是現在時間
+);
+
+INSERT INTO sample_products (name, price, cost) VALUES ('經典拿鐵', 95, 35);
+
