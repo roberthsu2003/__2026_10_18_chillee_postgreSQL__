@@ -12,3 +12,10 @@ CREATE TABLE "耗材庫存" (
 );
 
 DELETE FROM "耗材庫存";
+
+SELECT
+    (SELECT COUNT(*) FROM stores)      AS 門市,
+    (SELECT COUNT(*) FROM products)    AS 商品,
+    (SELECT COUNT(*) FROM customers)   AS 會員,
+    (SELECT COUNT(*) FROM orders)      AS 訂單,
+    (SELECT COUNT(*) FROM order_items) AS 明細;
