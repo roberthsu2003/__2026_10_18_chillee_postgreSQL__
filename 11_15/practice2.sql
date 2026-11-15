@@ -36,5 +36,15 @@ VALUES
     ('新竹巨城店1', '新竹市東區中央路',         '北部', '03-535-3333'),
     ('台中逢甲店1', '台中市西屯區逢甲路',       '中部', '04-2451-4444');
 
+INSERT INTO stores (name, address, region)
+VALUES ('高雄巨蛋店1', '高雄市左營區博愛二路', '南部');
+
+INSERT INTO stores (name, address, region, phone)
+VALUES ('台南西門店1', '台南市中西區西門路一段', '南部', '06-213-0005')
+RETURNING store_id, name;
+
+INSERT INTO stores (store_id, name, address, region)
+VALUES (1, '重複門市', '台北市', '北部');
+
 
 
