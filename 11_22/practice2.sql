@@ -15,3 +15,8 @@ RETURNING name, price, COST;
 DELETE FROM products
 WHERE name = '過季草莓拿鐵'
 RETURNING product_id, name;
+
+UPDATE products
+SET price = 75
+WHERE name = '美式咖啡'
+RETURNING product_id, name, price;
