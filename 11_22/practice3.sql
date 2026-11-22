@@ -14,3 +14,8 @@ VALUES ('台北信義店'), ('台中逢甲店');
 
 INSERT INTO fk_staff(name, store_id)
 VALUES ('張志明', 1), ('陳美玲', 1), ('許淑芬', 2)
+
+-- 保護資料的完整性
+
+INSERT INTO fk_staff(name, store_id)
+VALUES ('幽靈員工', 99);
