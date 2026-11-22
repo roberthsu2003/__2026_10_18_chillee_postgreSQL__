@@ -33,4 +33,7 @@ https://www.youtube.com/watch?v=neJJRSLtPxY
 ## 2026_11_22_早上
 https://www.youtube.com/watch?v=oLiBL5dQcGY
 
+## 2026_11_22_下午
+https://www.youtube.com/watch?v=LKgUOUhn30Q
+
 ---
