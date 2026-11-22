@@ -42,5 +42,15 @@ FROM products
 ORDER BY product_id
 LIMIT 5 OFFSET 5;
 
+SELECT
+    name,
+    salary
+FROM
+    staff
+WHERE
+    title = '店長'
+ORDER BY
+    salary DESC;
+
 
 
