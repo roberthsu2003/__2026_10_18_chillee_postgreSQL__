@@ -10,3 +10,5 @@ CREATE TABLE fk_order_items (
 
 INSERT INTO fk_orders VALUES (101);
 INSERT INTO fk_order_items VALUES (1, 101, '美式咖啡'), (2, 101, '可頌');
+
+DELETE FROM fk_orders WHERE order_id = 101;
