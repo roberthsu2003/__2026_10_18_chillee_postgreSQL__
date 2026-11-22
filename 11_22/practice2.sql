@@ -20,3 +20,23 @@ UPDATE products
 SET price = 75
 WHERE name = '美式咖啡'
 RETURNING product_id, name, price;
+
+BEGIN;
+UPDATE products
+SET price = 1;
+
+SELECT name, price
+FROM products
+ORDER BY product_id
+LIMIT 3;
+
+ROLLBACK;
+
+BEGIN;
+UPDATE products
+SET price = 80
+WHERE name = '美式咖啡'
+RETURNING product_id, name, price;
+COMMIT;
+
+
