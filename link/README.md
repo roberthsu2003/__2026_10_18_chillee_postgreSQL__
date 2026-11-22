@@ -29,3 +29,8 @@ https://www.youtube.com/watch?v=sjGu8IB7V4g
 https://www.youtube.com/watch?v=neJJRSLtPxY
 
 ---
+
+## 2026_11_22_早上
+https://www.youtube.com/watch?v=oLiBL5dQcGY
+
+---
